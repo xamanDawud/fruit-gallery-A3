@@ -6,9 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Gallery</title>
+    <!-- Favicon is here  -->
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png">
     <!-- Tailwind and DaisyUi Cdn Link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Lato font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- Tailwind Customization  -->
     <script>
         tailwind.config = {
@@ -26,9 +32,68 @@
 </head>
 
 <body>
-    <h2>Hello Xaman </h2>
-    <h5>are you happy now</h5>
-    <p class="text-purple-300">salam where you was</p>
+    <!-- Header start from here  -->
+    <header>
+        <!-- Navbar Start from here  -->
+
+        <nav class="container lg mx-auto bg-[#F85559] rounded-full">
+            <div class="navbar">
+                <div class="">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="navbar-start hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-white font-lato">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <img class="w-10 mr-2" src="images/logo.png" alt="">
+                <a class="w-40 font-semibold normal-case text-2xl text-white font-lato">Fruit Burst</a>
+                <!-- nav Search TextBox  -->
+                <div class="navbar-end relative">
+                    <input type="text" placeholder="Type here"
+                        class="input input-bordered input-primary w-72 h-10 mr-4 rounded-full border-none max-w-xs" />
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-[#121212] absolute mr-8">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main section start from here -->
+    <main>
+
+    </main>
+    <!-- Footer section start from here  -->
+    <footer>
+
+    </footer>
 </body>
 
 </html>
