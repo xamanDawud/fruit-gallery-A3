@@ -36,8 +36,41 @@
     <header>
         <!-- Navbar Start from here  -->
 
-        <nav class="container lg mx-auto bg-[#F85559] rounded-full">
-            <div class="navbar">
+        <nav class="container lg mx-auto bg-[#F85559] rounded-full my-6">
+            <div class="navbar hidden  md:block lg:block">
+                <div class="flex justify-between">
+                    <div class="navbar-start lg:w-80 ">
+                        <ul class="menu menu-horizontal px-1 text-white font-lato">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <img class="w-10 mr-2 lg:ml-48 hidden lg:block md:block" src="images/logo.png" alt="">
+                        <a
+                            class="w-40 font-semibold normal-case text-2xl text-white font-lato hidden lg:block md:block">Fruit
+                            Burst</a>
+                    </div>
+                    <!-- nav Search TextBox  -->
+                    <div class="hidden md:block lg:block pl-64 ">
+                        <div class="navbar-end relative  ">
+                            <input type="text" placeholder="Type here"
+                                class="input input-bordered input-primary w-72 h-10 mr-4 rounded-full border-none max-w-xs" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 text-[#121212] absolute top-2 ml-64">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hamburger and Logo for mobile device -->
+            <div class="flex justify-between sm:block lg:hidden md:hidden">
                 <div class="">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -48,42 +81,22 @@
                         </label>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
                         </ul>
                     </div>
-
                 </div>
 
-                <div class="navbar-start hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 text-white font-lato">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
-                    </ul>
-                </div>
-                <img class="w-10 mr-2" src="images/logo.png" alt="">
-                <a class="w-40 font-semibold normal-case text-2xl text-white font-lato">Fruit Burst</a>
-                <!-- nav Search TextBox  -->
-                <div class="navbar-end relative">
-                    <input type="text" placeholder="Type here"
-                        class="input input-bordered input-primary w-72 h-10 mr-4 rounded-full border-none max-w-xs" />
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6 text-[#121212] absolute mr-8">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                    </svg>
-
+                <div class="flex justify-between items-center">
+                    <img class="w-10 mr-2 lg:ml-48 " src="images/logo.png" alt="">
+                    <a class="w-40 font-semibold normal-case text-2xl text-white font-lato">Fruit
+                        Burst</a>
                 </div>
             </div>
+
+
         </nav>
     </header>
     <!-- Main section start from here -->
