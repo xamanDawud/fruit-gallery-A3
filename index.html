@@ -103,7 +103,7 @@
     <main>
         <!-- Banner section start from here -->
         <section class="banner container lg mx-auto relative">
-            <div class="carousel w-full">
+            <div class="carousel w-full rounded-lg">
                 <div id="slide1" class="carousel-item image-container relative w-full">
                     <img src="images/banner1.png" class="w-full " />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -229,8 +229,9 @@
         </section>
         <!-- Banner section end in here  -->
         <!-- Deal of the day section start from here  -->
-        <section class="deal-day-section container lg mx-auto mt-40 font-lato">
-            <div class="deal-top flex justify-between">
+        <section class="deal-day-section container lg mx-auto md:mt-40 lg:mt-40 mt-5 font-lato">
+            <div
+                class="deal-top flex-col md:flex-row-reverse lg:flex-row flex md:justify-around lg:justify-between justify-center items-center text-center">
                 <div class="deal-top-content w-96">
                     <h1 class="text-3xl font-bold">Deal of the day</h1>
                     <p class="text-xs my-4 text-[#6D6D6D]">Contrary to popular belief, is not simply random text. It has
@@ -270,7 +271,18 @@
                 </div>
             </div>
             <div class="deal-bottom">
-
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Deal of the day section end in here  -->
